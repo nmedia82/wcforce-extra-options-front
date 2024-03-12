@@ -5,6 +5,8 @@
     "options": [
       {
         "label": "Male",
+        "value":"male",
+        "labelPlacement":"start",
         "price": "",
         "weight": "",
         "discount": "",
@@ -12,11 +14,37 @@
         "option_id": "actfR",
         "icon_delete": "",
         "icon_clone": ""
+      },
+      {
+        "label": "Female",
+        "value":"female",
+        "labelPlacement":"top",
+        "price": "",
+        "weight": "",
+        "discount": "",
+        "stock": "",
+        "option_id": "adh",
+        "icon_delete": "",
+        "icon_clone": ""
+      },
+      {
+        "label": "All",
+        "value": "others",
+        "labelPlacement":"bottom",
+        "price": "",
+        "weight": "",
+        "discount": "",
+        "stock": "",
+        "option_id": "adh",
+        "icon_delete": "",
+        "icon_clone": ""
       }
     ],
     "conditions": {},
-    "title": "Ge",
-    "field_id": "ge"
+    "field_id": "ge",
+     "size": "small",
+     "color": "success"
+      
   },
   {
     "id": "fBek4",
@@ -37,7 +65,12 @@
     "field_id": "shirt_size",
     "variant": "standard",
     "color": "primary",
-    "size": "normal"
+    "size": "normal",
+    "type": "text",
+    "default_value":"string",
+    "position": "start",
+    "placeholder":"Enter Your name",
+    "boots_size":"lg"
   },
   {
     "id": "ils8f",
@@ -55,7 +88,14 @@
       ]
     },
     "title": "Age",
-    "field_id": "age"
+    "field_id": "age",
+    "variant": "filled",
+    "color": "secondary",
+    "size": "normal",
+    "type" : "number",
+    "position": "end",
+    "placeholder":"Enter Your number",
+    "boots_size":"lg"
   },
   {
     "id": "3lZn6",
@@ -76,28 +116,146 @@
     "field_id": "website_url",
     "hide_in_cart": true,
     "is_required": true,
-    "col": "6"
+    "col": "6",
+    "placeholder":"Your URL",
+    "boots_size":"sm"
   },
   {
     "id": "asfs",
-    "input": "text",
+    "input": "email",
     "options": [],
     "conditions": {
       "visibility": "show",
       "ruleBound": "any",
       "rules": [
         {
-          "field_id": "ge",
+          "field_id": "email",
           "condition": "is",
           "value": "Male"
         }
       ]
     },
-    "title": "Your Company Na,e",
-    "field_id": "company_name",
+    "title": "Enter Your Email",
+    "field_id": "email",
     "hide_in_cart": true,
     "is_required": true,
     "col": "6",
-    "color": "primary"
+    "color": "primary",
+    "variant": "filled",
+    "size": "normal",
+    "type" : "email",
+    "position":"end",
+    "placeholder":"Enter Your Email",
+    " boots_size":"sm"
+  },
+  {
+    "id": "asf",
+    "input": "textarea",
+    "options": [],
+    "conditions": {
+      "visibility": "show",
+      "ruleBound": "any",
+      "rules": [
+        {
+          "field_id": "textarea",
+          "condition": "is",
+          "value": "Male"
+        }
+      ]
+    },
+    "title": "Multiline",
+    "field_id": "textarea",
+    "is_required": true,
+    "color": "success",
+    "variant": "outlined",
+    "size": "medium",
+    "lines": "3"
+  },
+  {
+    "id": "ass",
+    "input": "select",
+    "options": [
+      {
+      "label": "Ten",
+      "value": "Ten"
+    },
+    {
+      "label": "Twenty",
+      "value": "Twenty"
+    },
+    {
+      "label": "Thirty",
+      "value": "Thirty"
+    }
+    ],
+    "conditions": {
+      "visibility": "show",
+      "ruleBound": "any",
+      "rules": [
+        {
+          "field_id": "select",
+          "condition": "is",
+          "value": "Male"
+        }
+      ]
+    },
+    "label": "Age",
+    "field_id": "selector",
+    "color": "primary",
+    "variant": "",
+    "size": "medium",
+    " boots_size":"lg"
+  },
+  {
+    "id": "3lZn6",
+    "input": "checks",
+    "options": [],
+    "conditions": {
+      "visibility": "show",
+      "ruleBound": "any",
+      "rules": [
+      ]
+    },
+    "title": "Label",
+    "field_id": "checks",
+    "is_required": true,
+     "color": "success",
+    "labelPlacement": "start",
+    "size": "small",
+    "defaultChecked":"defaultChecked"
+  },
+  {
+    "id": "3lZn",
+    "input": "rating",
+    "options": [],
+    "conditions": {
+      "visibility": "show",
+      "ruleBound": "any",
+      "rules": [
+      ]
+    },
+    "title": "Label",
+    "field_id": "checks",
+    "is_required": true,
+    "size": "medium"
+  },
+   {
+    "id": "as23",
+    "input": "slider",
+    "options": [],
+    "conditions": {
+      "visibility": "show",
+      "ruleBound": "any",
+      "rules": []
+    },
+    "title": "Enter Your Email",
+    "is_required": true,
+    "orientation": "vertical",
+    "color": "secondary",
+    "variant": "filled",
+    "size": "small",
+    "default_value": "70",
+     "valueLabelDisplay":"auto"
+     
   }
 ]
