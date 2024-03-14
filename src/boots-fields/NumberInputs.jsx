@@ -6,15 +6,12 @@ function NumberInputs({ field }) {
   const { title, type, placeholder, boots_size } = field;
   return (
     <>
-      <InputGroup>
-        <InputGroup.Checkbox />
-        <Form.Control
-          type={type}
-          placeholder={placeholder}
-          boots_size={boots_size}
-        />
-        <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
-      </InputGroup>
+      <Form.Control
+        type={type}
+        placeholder={placeholder}
+        boots_size={boots_size}
+      />
+      <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
     </>
   );
 }
